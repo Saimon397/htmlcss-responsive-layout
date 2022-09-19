@@ -46,17 +46,22 @@ a {
 .btn-blue {
     background-color: var(--blue);
     color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
 }
 
 .btn-purple {
     background-color: var(--purple);
     color: var(--white);
     padding: 0.5rem 2.5rem;
+    border-radius: 20px;
 }
 
 .btn-white {
     background-color: var(--white);
     color: var(--purple);
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
 }
 
 /*HEADER*/
@@ -117,6 +122,8 @@ section:nth-of-type(even) {
     background-color: var(--purple);
 }
 
+/*CARDS*/
+
 .box {
     padding: 2rem 1rem;
     margin: 1rem 0;
@@ -138,7 +145,7 @@ section:nth-of-type(even) {
     text-align: center;
 }
 
-.box-1 .cards.large h3 {
+.box-1 .cards.width h3 {
     text-align: left;
     padding-bottom: 0;
 }
@@ -169,11 +176,11 @@ section:nth-of-type(even) {
     border-radius: 50px;
 }
 
-#white .planning-box {
+#white.planning-box {
     background-color: var(--white);
 }
 
-#image-1 .card-image img {
+#image-1.card-image img {
     padding-bottom: 5rem;
 }
 
@@ -181,29 +188,29 @@ section:nth-of-type(even) {
     justify-content: center;
 }
 
-#image-2 .card-image img {
+#image-2.card-image img {
     width: 250px;
     padding-bottom: 1rem;
 }
 
-#text-1 .card-text {
+#text-1.card-text {
     color: var(--white);
 }
 
-#text-1 .card-text>h3 {
+#text-1.card-text>h3 {
     font-size: 2.5rem;
     padding-bottom: 2.5rem;
 }
 
-#text-2 .card-text {
+#text-2.card-text {
     text-align: center;
 }
 
-#text-2 .card-text>h3 {
+#text-2.card-text>h3 {
     font-size: 1.5rem;
 }
 
-#text-2 .card-text>p {
+#text-2.card-text>p {
     font-style: italic;
     padding: 2rem 0;
 }
@@ -304,4 +311,293 @@ section:nth-of-type(even) {
 
 .benefits-box .btn-purple {
     padding: 0.5rem 2.5rem;
+}
+
+/*ABOUT-US*/
+
+#first.about-us-box>.card-text {
+    line-height: 2rem;
+}
+
+#first.about-us-box h2 {
+    color: var(--purple);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+#position-relative {
+    position: relative;
+}
+
+#position-relative>.quotation-marks {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 3rem;
+    color: var(--purple);
+}
+
+.linkedin-contact {
+    color: var(--purple);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+/*GET-STARTED*/
+
+.get-started-box {
+    text-align: center;
+    color: var(--white);
+}
+
+.start {
+    font-size: 0.7rem;
+    color: rgb(213, 212, 244);
+    padding-bottom: 1rem;
+}
+
+.feature {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.copyright>a {
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+/*RESPONSIVE-DESKTOP*/
+
+@media screen and (min-width:992px) {
+
+    .small .container {
+        max-width: 900px;
+    }
+
+    /*HEADER*/
+    
+    .nav-menu {
+        display: block;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    /*MAIN*/
+
+    /*CARDS*/
+
+    .box-1 .cards.width {
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .box-1 .cards.width>* {
+        width: calc(50% - 1rem);
+    }
+
+    .box-1 .card-image {
+        padding: 0 5rem;
+        align-self: flex-end;
+    }
+
+    .box-1 .card-text>p {
+        padding: 1.5rem 0;
+    }
+
+    /*PLANNING*/
+
+    #planning .container {
+        max-width: 900px;
+    }
+
+    .planning-justify {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .planning-box {
+        width: calc(50% - 1rem);
+    }
+
+    #image-1.card-image img {
+        width: 380px;
+        padding-bottom: 8rem;
+    }
+
+    /*BENEFITS*/
+
+    .benefits-box {
+        width: calc((100% / 3) - 1rem);
+    }
+
+    .benefit-number {
+        font-size: 5rem;
+    }
+
+    /*ABOUT-US*/
+
+    .about-us-justify {
+        justify-content: space-between;
+    }
+
+    .about-us-box:first-child {
+        width: calc(65% - 0.75rem)
+    }
+
+    .about-us-box:last-child {
+        width: calc(35% - 0.75rem)
+    }
+
+}
+
+/*RESPONSIVE-TABLET*/
+
+@media screen and (min-width:768px) {
+
+    /*MAIN*/
+
+    .burger-button {
+        font-size: 1.5rem;
+    }
+
+    /*INTRO*/
+
+    .intro-box {
+        justify-content: space-between;
+    }
+
+    .box-1 {
+        width: calc((100% / 3) - 1rem);
+    }
+
+    .box-1:first-child {
+        width: calc(((100% / 3) * 2) - 0.5rem);
+    }
+
+    .box-1:nth-child(4) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .box-1 .cards {
+        justify-content: flex-start;
+    }
+
+    .card-text {
+        text-align: left;
+    }
+
+    .box-1 .card-text>p {
+        padding: 2rem 0;
+    }
+
+    /*PLANNING*/
+
+    #image-1 .card-image img {
+        width: auto;
+    }
+
+    /*TESTIMONIALS*/
+
+    .testimonials-cards {
+        justify-content: space-between;
+    }
+
+    .testimonials-cards .card-image {
+        width: 35%;
+    }
+
+    .testimonials-cards .card-text {
+        width: 65%;
+    }
+
+    .testimonials-box .card-text {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .comment {
+        padding: 1.5rem 0 2rem 0;
+        font-size: 1.3rem;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    /*BENEFITS*/
+
+    .benefits-justify {
+        justify-content: space-between;
+    }
+
+    .benefits-title {
+        width: 100%;
+    }
+
+    .benefits-title>h2 {
+        text-align: center;
+    }
+
+    .benefits-box {
+        width: calc(50% - 1rem);
+    }
+
+    .benefit-number {
+        font-size: 3.5rem;
+    }
+
+    .benefit {
+        font-size: 1.7rem;
+    }
+
+    /*ABOUT-US*/
+
+    .about-us-justify {
+        justify-content: space-between;
+    }
+
+    .about-us-box {
+        width: calc(50% - 1rem);
+    }
+
+    .small .container {
+        max-width: 740px;
+    }
+
+    #second.about-us-box .card-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #second.about-us-box .card-text {
+        text-align: center;
+    }
+
 }
