@@ -26,6 +26,39 @@ body {
     margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*BUTTONS*/
+
+.btn-blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.btn-violet {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 0.5rem 2.5rem;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--purple);
+}
+
 /*HEADER*/
 
 header {
@@ -34,8 +67,99 @@ header {
     color: var(--white);
 }
 
+.mobile-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 
+.nav-menu {
+    display: none;
+}
 
+.burger-button {
+    font-size: 1.2rem;
+}
 
+.nav-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    padding: 0.5rem 0.5rem;
+}
+
+.nav-menu a {
+    padding: 0.5rem 0.5rem;
+}
+
+.nav-menu li:last-child {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 20px;
+}
+
+/*MAIN*/
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--purple);
+}
+
+.box {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+}
+
+.box-1 {
+    background-color: var(--light-blue);
+    border-radius: 20px;
+}
+
+.intro-box .box-1:first-child {
+    padding-bottom: 0;
+}
+
+.box-1 h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.box-1 .cards.large h3 {
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.box-1 .cards {
+    justify-content: center;
+    text-align: center;
+}
+
+.box-1 .card-text>p {
+    padding: 2rem 0;
+    text-align: left;
+}
+
+.box-1 img {
+    width: 200px;
+    padding-top: 2rem;
+}
+
+.icon {
+    color: var(--blue);
+    font-size: 5rem;
+}
 
