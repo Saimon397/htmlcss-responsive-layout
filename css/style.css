@@ -48,7 +48,7 @@ a {
     color: white;
 }
 
-.btn-violet {
+.btn-purple {
     background-color: var(--purple);
     color: var(--white);
     padding: 0.5rem 2.5rem;
@@ -163,3 +163,145 @@ section:nth-of-type(even) {
     font-size: 5rem;
 }
 
+/*PLANNING*/
+
+.planning-box {
+    border-radius: 50px;
+}
+
+#white .planning-box {
+    background-color: var(--white);
+}
+
+#image-1 .card-image img {
+    padding-bottom: 5rem;
+}
+
+.planning-box .card-image {
+    justify-content: center;
+}
+
+#image-2 .card-image img {
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+#text-1 .card-text {
+    color: var(--white);
+}
+
+#text-1 .card-text>h3 {
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#text-2 .card-text {
+    text-align: center;
+}
+
+#text-2 .card-text>h3 {
+    font-size: 1.5rem;
+}
+
+#text-2 .card-text>p {
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+.arrow {
+    background-color: var(--purple);
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+/*TESTIMONIALS*/
+
+.intro-testimonials {
+    text-align: center;
+}
+
+.intro-testimonials>p {
+    padding-bottom: 2rem;
+}
+
+.intro-testimonials>h2 {
+    color: var(--purple);
+    padding: 2rem 0;
+}
+
+.testimonials-box {
+    background-color: var(--purple);
+    border-radius: 50px;
+}
+
+.testimonials-box .testimonials-cards {
+    justify-content: center;
+}
+
+.testimonials-box .card-text {
+    text-align: center;
+    color: var(--white);
+}
+
+.comment {
+    padding: 1.5rem 0 2rem 0;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.container-img-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-img-box img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/*BENEFITS*/
+
+.benefits-justify {
+    justify-content: center;
+}
+
+.benefits-title {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.benefits-box {
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.benefit-number,
+.benefit {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.benefit-number {
+    font-size: 2rem;
+}
+
+.benefit {
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+}
+
+.benefits-box p {
+    padding-bottom: 2rem;
+}
+
+.benefits-box .btn-purple {
+    padding: 0.5rem 2.5rem;
+}
