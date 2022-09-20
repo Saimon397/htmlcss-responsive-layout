@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -399,8 +399,8 @@ footer a {
 
 @media screen and (min-width:992px) {
 
-    .small .container {
-        max-width: 900px;
+    .container {
+        max-width: 1200px;
     }
 
     /*HEADER*/
