@@ -139,6 +139,10 @@ section:nth-of-type(even) {
     border-radius: 20px;
 }
 
+.intro-box {
+    margin-top: 60px;
+}
+
 .intro-box .box-1:first-child {
     padding-bottom: 0;
 }
