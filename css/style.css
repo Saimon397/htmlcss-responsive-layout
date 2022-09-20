@@ -450,6 +450,12 @@ footer a {
         padding-bottom: 8rem;
     }
 
+    /*TESTIMONIALS*/
+
+    .intro-testimonials {
+        margin-left: 65px;
+    }
+
     /*BENEFITS*/
 
     .benefits-box {
