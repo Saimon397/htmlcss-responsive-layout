@@ -67,9 +67,14 @@ a {
 /*HEADER*/
 
 header {
-    height: 80px;
     background-color: var(--blue);
     color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
 }
 
 .mobile-padding {
@@ -399,7 +404,7 @@ footer a {
     }
 
     /*HEADER*/
-    
+
     .nav-menu {
         display: block;
     }
@@ -607,4 +612,3 @@ footer a {
     }
 
 }
-
